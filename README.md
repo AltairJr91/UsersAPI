@@ -8,7 +8,7 @@ This is a  API that manages users, allowing CRUD operations. Users can be create
 - **Read User:** Fetch user details by their unique ID.
 - **Update User:** Modify user details, such as email, name, or phone number.
 - **DeleteUser:** Delete user from the database.
-- **Delete with Patch User:** Mark a user as deleted without removing them from the database.
+- **Delete with Patch:** Mark a user as deleted without removing them from the database.
 
 ## Prerequisites
 
