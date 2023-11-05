@@ -7,7 +7,8 @@ This is a  API that manages users, allowing CRUD operations. Users can be create
 - **Create User:** Create a new user by providing the required user details.
 - **Read User:** Fetch user details by their unique ID.
 - **Update User:** Modify user details, such as email, name, or phone number.
-- **Delete User:** Mark a user as deleted without removing them from the database.
+- **DeleteUser:** Delete user from the database.
+- **Delete with Patch User:** Mark a user as deleted without removing them from the database.
 
 ## Prerequisites
 
@@ -56,7 +57,13 @@ To run this API, make sure you have the following installed:
 
 - **DELETE** `/users/:id`
 
-  Mark a user as deleted by providing the user's ID in the request URL. This operation does not remove the user from the database but marks them as deleted.
+  Mark a user as deleted by providing the user's ID in the request URL. This operation remove the user from the database.
+
+### Delete User
+
+- **PATCH** `/users/:id`
+
+  Mark a user as deleted by creating a Deleted_at dateTime in database. This operation does not remove the user from the database but marks them as deleted.
 
 ## License
 
